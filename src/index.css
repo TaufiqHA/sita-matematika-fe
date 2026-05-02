@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Public Sans", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-primary: #000000;
+  --color-secondary: #0051D5;
+  --color-surface-bright: #F8F9FF;
+  --color-on-surface: #0B1C30;
+  --color-on-surface-variant: #45464D;
+  --color-outline-variant: #C6C6CD;
+}
+
+@layer base {
+  body {
+    @apply bg-surface-bright text-on-surface font-sans antialiased;
+  }
+}
